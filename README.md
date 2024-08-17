@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js initial Boilerplate Using App routing
 
-## Getting Started
+A boilerplate for a Vite (React) frontend and Express backend.
 
-First, run the development server:
+## Setup
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Clone the Repo and Reset repo history for you:**
+   ```bash
+   git clone <repo-url> your-project-name
+   cd your-project-name
+   ```
+2. **Reset repo history for you:**
+   ```bash
+   rm -rf .git / Remove-Item -Recurse -Force .git
+   ```
+3. **Install Dependencies:**
+     npm install
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. **Initialize your new repo:**
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   ```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+5. **Create a newly made copy in your repo:**
+   ```bash
+   git branch -M main
+   git remote add origin <your origin>
+   git push -u origin main
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Running the Project
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Start both server (port 5000) and client (port 3000) concurrently:
+npm run dev - In the root directory
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Access the app and the server: `http://localhost:3000`
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
